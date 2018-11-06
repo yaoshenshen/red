@@ -1,0 +1,6 @@
+
+docker build -t pushv1 .
+
+docker run -itd --name push --link redis:redis -v /project/yao/push/serveryao/server:/project/server -p 8080:8080 pushv1
+
+
